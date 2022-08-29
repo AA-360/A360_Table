@@ -55,6 +55,7 @@ public class FindInListSchema implements Cloneable{
         }
         return -1;
     }
+    //nao retorna os nao encontrados
     public List<Integer> indexSchema(List<String> value) {
         List<Integer> lista = new ArrayList();
         for(String v: value){
@@ -68,6 +69,15 @@ public class FindInListSchema implements Cloneable{
         }
         return lista;
     }
+    //nao encontrados retorna -1
+    public List<Integer> indexSchema2(List<String> value) {
+        List<Integer> lista = new ArrayList();
+        for(String v: value){
+            lista.add(indexSchema(v));
+        }
+        return lista;
+    }
+
     public List<String> shemaNames() {
         List<String> names = new ArrayList();
 

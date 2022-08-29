@@ -34,7 +34,7 @@ import static com.automationanywhere.commandsdk.model.AttributeType.*;
 //import java.Math;
 //import Math;
 
-//@BotCommand
+@BotCommand
 @CommandPkg(
         label = "ListToHeaders",
         name = "ListToHeaders",
@@ -56,32 +56,27 @@ public class ListToHeaders {
             @NotEmpty
                     Table Tabela,
             @Idx(index = "2", type = LIST )
-            @Pkg(label = "[[ListToHeaders.rowIdx.label]]",description = "[[ListToHeaders.rowIdx.description]]")
+            @Pkg(label = "[[ListToHeaders.list.label]]",description = "[[ListToHeaders.list.description]]")
             @NotEmpty
-            @GreaterThanEqualTo("0")
-                    ListValue<String> lista
+                    List<Value> lista
     ) {
         //============================================================ CHECKING COLUMNS
-//        List<Schema> SCHEMAS = new ArrayList<>(Tabela.getSchema());
-//        List<String> SCHEMA_NAMES = new ArrayList<>();
-//
-//        if(rowIdx >= Tabela.getRows().size()){
-//            throw new BotCommandException("Row '" + rowIdx + "' not found!");
-//        }
-//
-//
-//        for (Value col : Tabela.getRows().get(rowIdx.intValue()).getValues()) {
-//            SCHEMA_NAMES.add(col.toString());
-//        }
-//        FindInListSchema fnd = new FindInListSchema(SCHEMA_NAMES);
-//
-//        if(deleteRow){
-//            List<Row> rws = Tabela.getRows();
-//            rws.remove(rowIdx.intValue());
-//            Tabela.setRows(rws);
-//        }
-//
-//      Tabela.setSchema(fnd.schemas);
+        List<Schema> SCHEMAS = new ArrayList<>(Tabela.getSchema());
+        int idx = 0;
+
+        if(lista.size() > Tabela.getSchema().size()){
+            throw new BotCommandException("list contains too much values!");
+        }
+        for(Value hrd: lista){
+            SCHEMAS.set(idx,new Schema(hrd.toString()));
+            idx++;
+        }
+
+        FindInListSchema fnd = new FindInListSchema(SCHEMAS);
+
+
+
+      Tabela.setSchema(fnd.schemas);
         TableValue OUTPUT = new TableValue();
         OUTPUT.set(Tabela);
         return OUTPUT;

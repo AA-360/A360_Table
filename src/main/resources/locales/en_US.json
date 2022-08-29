@@ -176,8 +176,6 @@
 	"HasHeader.not.label": "not",
 	"HasHeader.not.description": "invert the condition to 'do not has header'",
 
-
-
 	"HasAllHeaders.description": "",
 	"HasAllHeaders.node_label": "Cols in list exists in {{Tabela}}",
 	"HasAllHeaders.table.label": "TAble:",
@@ -185,7 +183,15 @@
 	"HasAllHeaders.list.label": "List:",
 	"HasAllHeaders.list.description": "Columns list to be verifyed",
 	"HasAllHeaders.btrim.label": "Trim",
-	"HasAllHeaders.btrim.description": "Trim spaces"
+	"HasAllHeaders.btrim.description": "Trim spaces",
+
+	"ListToHeaders.description": "Change the headers from a table to the acording values from a list",
+	"ListToHeaders.node_label": "List {{lista}} as headers at {{Tabela}}",
+	"ListToHeaders.table.label": "Table:",
+	"ListToHeaders.table.description": "",
+	"ListToHeaders.list.label": "List:",
+	"ListToHeaders.list.description": "Headers list to be used:",
+	"ListToHeaders.return_description": "Returns the new table"
 
 
 }

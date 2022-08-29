@@ -92,7 +92,7 @@ public class Calculate {
                 throw new BotCommandException("Column '" + sc + "' not found!");
             }
         }
-        List<Integer> SCHEMA_IDX = fnd.indexSchema(SCHEMA_NAMES);
+        List<Integer> SCHEMA_IDX = fnd.indexSchema2(SCHEMA_NAMES);
 
         //============================================================ RUN CALC
         Debugger debugger = new Debugger();

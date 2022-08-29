@@ -182,5 +182,15 @@
     "HasAllHeaders.list.label": "Lista:",
     "HasAllHeaders.list.description": "Lista de colunas a serem verificadas",
     "HasAllHeaders.btrim.label": "Trim",
-    "HasAllHeaders.btrim.description": "Limpar espaços em branco a esquerda e direita"
+    "HasAllHeaders.btrim.description": "Limpar espaços em branco a esquerda e direita",
+
+    "ListToHeaders.description": "Muda os headers de uma tabela de acordo com uma lista",
+    "ListToHeaders.node_label": "Lista {{lista}} como headers em {{Tabela}}",
+    "ListToHeaders.table.label": "Tabela:",
+    "ListToHeaders.table.description": "",
+    "ListToHeaders.list.label": "Lista:",
+    "ListToHeaders.list.description": "Lista de headers a serem sobreescrevidos!",
+    "ListToHeaders.return_description": "Retorna a nova tabela"
+
+
 }

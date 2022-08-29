@@ -8,6 +8,7 @@ import com.automationanywhere.botcommand.data.model.table.Table;
 import com.automationanywhere.botcommand.exception.BotCommandException;
 import com.automationanywhere.botcommand.samples.commands.basic.Calculate;
 import com.automationanywhere.botcommand.samples.commands.basic.ColumnToList;
+import com.automationanywhere.botcommand.samples.commands.basic.ListToHeaders;
 import com.automationanywhere.botcommand.samples.commands.conditionals.HasHeader;
 import org.testng.annotations.Test;
 
@@ -20,16 +21,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CalculateTest {
+
     //@Test
+    public void listToHeaders(){
+        ListToHeaders a = new ListToHeaders();
+        Table tb = this.tabela();
+
+        ListValue<String> returnvalue = new ListValue<String>();
+        List<Value> vals = new ArrayList<Value>();
+
+        vals.add(new StringValue("OK"));
+        vals.add(new StringValue("ABC"));
+        vals.add(new StringValue("DEF"));
+
+        tb = a.action(tb,vals).get();
+
+        uteisTest.printTable(tb,10);
+
+    }
+
+    @Test
     public void teste(){
         Calculate a = new Calculate();
         Table tb = this.tabela();
 
-        NumberValue ret = a.action(tb,"USD",code());
+        NumberValue ret = a.action(tb,"USD|@123",code());
         System.out.println("==================" + ret.get());
     }
 
-    @Test
+    //@Test
     public void HasHeaders(){
         HasHeader a = new HasHeader();
 

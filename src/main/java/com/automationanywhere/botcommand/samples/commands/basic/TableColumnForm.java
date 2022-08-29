@@ -117,7 +117,7 @@ public class TableColumnForm {
                 throw new BotCommandException("Column '" + sc + "' not found!");
             }
         }
-        List<Integer> SCHEMA_IDX = fnd.indexSchema(SCHEMA_NAMES);
+        List<Integer> SCHEMA_IDX = fnd.indexSchema2(SCHEMA_NAMES);
 
         //============================================================ CHECKING NEW COLUMN
 

@@ -95,7 +95,7 @@ public class FilterRegister {
                 throw new BotCommandException("Column '" + sc + "' not found!");
             }
         }
-        List<Integer> SCHEMA_IDX = fnd.indexSchema(SCHEMA_NAMES);
+        List<Integer> SCHEMA_IDX = fnd.indexSchema2(SCHEMA_NAMES);
         System.out.println(SCHEMA_NAMES);
 
         //============================================================ RUN FILTER

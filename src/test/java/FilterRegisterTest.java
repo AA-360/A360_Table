@@ -25,7 +25,7 @@ public class FilterRegisterTest {
 
         String code = this.code();
 
-        TableValue tbv = a.action(tb,"",code);
+        TableValue tbv = a.action(tb,"TEST|@OK",code);
 
         System.out.println("Expected First Value: " + tbv.get(0).get("TEST").toString());
     }

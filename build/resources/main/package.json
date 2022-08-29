@@ -4,8 +4,8 @@
     "description": "",
     "group": "com.automationanywhere",
     "artifactName": "Table_Uts",
-    "packageVersion": "4.3-20220317-160214",
-    "codeVersion": "4.3-20220317-160214",
+    "packageVersion": "4.7-20220725-174802",
+    "codeVersion": "4.7-20220725-174802",
     "author": "",
     "commands": [
         {
@@ -216,6 +216,43 @@
                         {
                             "name": "CODE_TYPE",
                             "value": "text/javascript"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ListToHeaders",
+            "label": "ListToHeaders",
+            "description": "[[ListToHeaders.description]]",
+            "nodeLabel": "[[ListToHeaders.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.ListToHeadersCommand",
+            "icon": "pkg.svg",
+            "returnType": "TABLE",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "",
+            "returnRequired": true,
+            "returnDescription": "[[ListToHeaders.return_description]]",
+            "attributes": [
+                {
+                    "name": "Tabela",
+                    "label": "[[ListToHeaders.table.label]]",
+                    "description": "[[ListToHeaders.table.description]]",
+                    "type": "TABLE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "lista",
+                    "label": "[[ListToHeaders.list.label]]",
+                    "description": "[[ListToHeaders.list.description]]",
+                    "type": "LIST",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
                         }
                     ]
                 }
