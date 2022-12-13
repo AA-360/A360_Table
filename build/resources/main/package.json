@@ -4,8 +4,8 @@
     "description": "",
     "group": "com.automationanywhere",
     "artifactName": "Table_Uts",
-    "packageVersion": "4.7-20220725-174802",
-    "codeVersion": "4.7-20220725-174802",
+    "packageVersion": "5.0-20221207-171318",
+    "codeVersion": "5.0-20221207-171318",
     "author": "",
     "commands": [
         {
@@ -55,6 +55,27 @@
                         {
                             "name": "CODE_TYPE",
                             "value": "text/javascript"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ClearTable",
+            "label": "ClearTable",
+            "description": "[[ClearTable.description]]",
+            "nodeLabel": "[[ClearTable.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.ClearTableCommand",
+            "icon": "pkg.svg",
+            "attributes": [
+                {
+                    "name": "Tabela",
+                    "label": "[[ClearTable.table.label]]",
+                    "description": "[[ClearTable.table.description]]",
+                    "type": "TABLE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
                         }
                     ]
                 }
@@ -253,6 +274,51 @@
                     "rules": [
                         {
                             "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "NewEmptyRow",
+            "label": "NewEmptyRow",
+            "description": "[[NewEmptyRow.description]]",
+            "nodeLabel": "[[NewEmptyRow.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.NewEmptyRowCommand",
+            "icon": "pkg.svg",
+            "attributes": [
+                {
+                    "name": "Tabela",
+                    "label": "[[NewEmptyRow.table.label]]",
+                    "description": "[[NewEmptyRow.table.description]]",
+                    "type": "TABLE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "check_at_index",
+                    "label": "[[NewEmptyRow.check_at_index.label]]",
+                    "description": "[[NewEmptyRow.check_at_index.description]]",
+                    "type": "CHECKBOX",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "attributes": [
+                        {
+                            "name": "index",
+                            "label": "[[NewEmptyRow.number.label]]",
+                            "description": "[[NewEmptyRow.number.description]]",
+                            "type": "NUMBER",
+                            "rules": [
+                                {
+                                    "name": "NOT_EMPTY"
+                                }
+                            ]
                         }
                     ]
                 }

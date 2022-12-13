@@ -191,7 +191,21 @@
 	"ListToHeaders.table.description": "",
 	"ListToHeaders.list.label": "List:",
 	"ListToHeaders.list.description": "Headers list to be used:",
-	"ListToHeaders.return_description": "Returns the new table"
+	"ListToHeaders.return_description": "Returns the new table",
 
+	"NewEmptyRow.description": "Adds a new Empty Row",
+	"NewEmptyRow.node_label": "Adds a new row to {{Tabela}} table",
+	"NewEmptyRow.table.label": "Table:",
+	"NewEmptyRow.table.description": "",
+	"NewEmptyRow.check_at_index.label": "To index:",
+	"NewEmptyRow.check_at_index.description": "Add to index:",
+	"NewEmptyRow.number.label": "Index:",
+	"NewEmptyRow.number.description": "Specify a index",
+
+	"ClearTable.description": "Deletes all rows from a table",
+	"ClearTable.node_label": "Delete all rows from {{Tabela}}",
+	"ClearTable.table.label": "Table:",
+	"ClearTable.table.description": ""
 
 }
+

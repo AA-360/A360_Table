@@ -12,16 +12,21 @@ import org.testng.annotations.Test;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
 import javax.swing.*;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Testes {
-    @Test
+
+
+
+
     public void encode() {
         try {
             String key = "1234";
@@ -41,4 +46,38 @@ public class Testes {
     private void alert(String text){
         JOptionPane.showMessageDialog(null, text, "InfoBox: Title", JOptionPane.INFORMATION_MESSAGE);
     }
+
+    //@Test
+    public void testCode(){
+        ScriptEngineManager manager = new ScriptEngineManager();
+        ScriptEngine engine = manager.getEngineByName("text/vbscript");
+        String codee = code();
+
+        try{
+            engine.eval(codee);
+        }
+        catch (Exception e){
+            throw new BotCommandException("Error when trying to load Js code!" + e.getMessage());
+        }
+
+
+    }
+
+    private String code(){
+        try{
+            BufferedReader reader = Files.newBufferedReader(Paths.get("C:/Temp/vbs.vb"), StandardCharsets.UTF_8);
+            StringWriter writer = new StringWriter();
+            String code = "";
+            String line;
+            while ((line = reader.readLine()) != null) {
+                code += line + "\n";
+            }
+
+            return code;
+        }
+        catch (Exception e){
+            throw new BotCommandException("Error when trying to load Js code!");
+        }
+    }
+
 }

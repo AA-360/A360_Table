@@ -5,7 +5,9 @@ import com.automationanywhere.botcommand.data.model.Schema;
 import com.automationanywhere.botcommand.data.model.table.Row;
 import com.automationanywhere.botcommand.data.model.table.Table;
 import com.automationanywhere.botcommand.exception.BotCommandException;
+import com.automationanywhere.botcommand.samples.commands.basic.ClearTable;
 import com.automationanywhere.botcommand.samples.commands.basic.FilterRegister;
+import com.automationanywhere.botcommand.samples.commands.basic.NewEmptyRow;
 import com.automationanywhere.botcommand.samples.commands.basic.TableColumnForm;
 import org.testng.annotations.Test;
 
@@ -19,6 +21,26 @@ import java.util.List;
 
 public class FilterRegisterTest {
     @Test
+    public void newRow(){
+
+        NewEmptyRow n = new NewEmptyRow();
+        ClearTable c =new ClearTable();
+        Table tb = this.tabela();
+
+
+        //uteisTest.printTable(tb,10);
+
+        n.action(tb,false,5.0);
+        //c.action(tb);
+
+        uteisTest.printTable(tb,10);
+
+
+    }
+
+
+
+
     public void teste(){
         FilterRegister a = new FilterRegister();
         Table tb = this.tabela();

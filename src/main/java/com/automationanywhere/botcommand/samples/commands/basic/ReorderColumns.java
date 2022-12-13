@@ -24,7 +24,6 @@ import com.automationanywhere.botcommand.samples.commands.utils.FindInListSchema
 import com.automationanywhere.commandsdk.annotations.*;
 import com.automationanywhere.commandsdk.annotations.rules.NotEmpty;
 import com.automationanywhere.commandsdk.model.DataType;
-import org.apache.poi.ss.formula.functions.T;
 
 import java.util.ArrayList;
 import java.util.Arrays;
