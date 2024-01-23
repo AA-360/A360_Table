@@ -4,8 +4,8 @@
     "description": "",
     "group": "com.automationanywhere",
     "artifactName": "Table_Uts",
-    "packageVersion": "5.0-20221207-171318",
-    "codeVersion": "5.0-20221207-171318",
+    "packageVersion": "5.2-20240123-105423",
+    "codeVersion": "5.2-20240123-105423",
     "author": "",
     "commands": [
         {

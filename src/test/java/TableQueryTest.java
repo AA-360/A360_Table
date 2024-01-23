@@ -5,7 +5,6 @@ import com.automationanywhere.botcommand.data.model.Schema;
 import com.automationanywhere.botcommand.data.model.table.Row;
 import com.automationanywhere.botcommand.data.model.table.Table;
 import com.automationanywhere.botcommand.samples.commands.basic.TableQuery;
-import com.automationanywhere.botcore.api.dto.AttributeType;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;

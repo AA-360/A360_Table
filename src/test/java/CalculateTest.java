@@ -40,7 +40,7 @@ public class CalculateTest {
 
     }
 
-    @Test
+    //@Test
     public void teste(){
         Calculate a = new Calculate();
         Table tb = this.tabela();

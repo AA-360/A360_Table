@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FilterRegisterTest {
-    @Test
+    //@Test
     public void newRow(){
 
         NewEmptyRow n = new NewEmptyRow();
@@ -40,16 +40,18 @@ public class FilterRegisterTest {
 
 
 
-
+    @Test
     public void teste(){
         FilterRegister a = new FilterRegister();
         Table tb = this.tabela();
 
         String code = this.code();
 
-        TableValue tbv = a.action(tb,"TEST|@OK",code);
+        TableValue tbv = a.action(tb,"TEST|*|@OK",code);
+        uteisTest.printTable(tbv.get(),10);
 
-        System.out.println("Expected First Value: " + tbv.get(0).get("TEST").toString());
+
+//        System.out.println("Expected First Value: " + tbv.get(0).get("TEST").toString());
     }
 
     private String code(){

@@ -39,7 +39,7 @@ configure(allprojects){
 		testNgVersion = '6.14.3'
 		loggerVersion = '2.10.0'
 		jnaVersion = '5.3.1.0'
-		version '5.0'
+		version '5.2'
 	}
 	group "$groupName"
 
@@ -93,31 +93,39 @@ configure(allprojects){
 
 	
 	dependencies {
-		compileOnly name: 'command-annotations', version: '1+'
-		compileOnly name: 'bot-runtime', version: '1+'
-		compileOnly name: 'bot-api', version: '1+'
-		compileOnly name: 'common-security', version: '1+'
+		//compileOnly name: 'command-annotations', version: '1+'
+		compileOnly name: 'package-compileonly-sdk', version: '1.1.0'
+		//compileOnly name: 'bot-runtime', version: '1+'
+		//compileOnly name: 'bot-api', version: '1+'
+		//compileOnly name: 'common-security', version: '1+'
 		implementation name: 'i18n-api', version: '1+'
 		apt name: 'command-processor', version: '1+'
 		compileOnly group: 'org.apache.logging.log4j', name: 'log4j-core', version: "$loggerVersion"
 		testImplementation "org.testng:testng:$testNgVersion"
-		testImplementation name: 'bot-runtime', version: '1+'
-		testImplementation name: 'bot-api', version: '1+'
+		//testImplementation name: 'bot-runtime', version: '1+'
+		//testImplementation name: 'bot-api', version: '1+'
+		testImplementation name: 'package-compileonly-sdk', version: '1.1.0'
+//		testImplementation name: 'package-compileonly-sdk', version: '1.1.0'
 
 
 		// https://mvnrepository.com/artifact/net.java.dev.jna/jna
-		implementation group: 'net.java.dev.jna', name: 'jna', version: '5.8.0'
-		implementation 'net.java.dev.jna:jna-platform:5.5.0'
+		//implementation group: 'net.java.dev.jna', name: 'jna', version: '5.8.0'
+		//implementation 'net.java.dev.jna:jna-platform:5.5.0'
 
-		implementation name: 'triggerlistener', version: '2+'
+		//compile 'commons-codec:commons-codec:1.15'
+		//compile group: 'org.jooq', name: 'jool', version: '0.9.3'
+		//implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.13.0'
+
+		//implementation name: 'triggerlistener', version: '2+'
 		implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.0.0'
 		//implementation group: 'com.monitorjbl', name: 'xlsx-streamer', version: '2.1.0'
-		implementation group: 'org.apache.poi', name: 'poi-scratchpad', version: '5.0.0'
+		//implementation group: 'org.apache.poi', name: 'poi-scratchpad', version: '5.0.0'
 
-		compile group: 'org.apache.activemq', name: 'activemq-all', version: '5.15.0'
-		compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.7.0'
-		compile group: 'com.h2database', name: 'h2', version: '1.4.200'
+		//compile group: 'org.apache.activemq', name: 'activemq-all', version: '5.15.0'
+		//compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.7.0'
+		//compile group: 'com.h2database', name: 'h2', version: '1.4.200'
 
+		implementation group: 'com.google.protobuf', name: 'protobuf-java', version: '3.5.1'
 
 		//Add below dependencies to compile the samples
 

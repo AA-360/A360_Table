@@ -91,11 +91,10 @@ public class FilterRegister {
         SCHEMA_NAMES = Arrays.asList(i_colunas.split("\\|"));
         SCHEMA_NAMES = i_colunas == ""?fnd.shemaNames():SCHEMA_NAMES;
         for (String sc : SCHEMA_NAMES) {
-            if (!fnd.exists(sc) && !sc.startsWith("@")) {
+            if (!fnd.exists(sc) && !sc.startsWith("@") && !sc.startsWith("*")) {
                 throw new BotCommandException("Column '" + sc + "' not found!");
             }
         }
-
         List<Integer> SCHEMA_IDX = fnd.indexSchema2(SCHEMA_NAMES);
         System.out.println(SCHEMA_NAMES);
 
@@ -116,8 +115,15 @@ public class FilterRegister {
             //ADCIONA OS PARAMETROS DA LINHA
             for(Integer i: SCHEMA_IDX){
                 if(i == -1){
-                    String val = SCHEMA_NAMES.get(index).replace("@","");
-                    params = Uteis.append(params, val);
+                    String colName = SCHEMA_NAMES.get(index);
+                    if(colName.strip().equals("*")){
+                        for(Schema col: SCHEMAS){
+                            params = Uteis.append(params, rw.getValues().get(fnd.indexSchema(col.getName())).toString());
+                        }
+                    }else {
+                        String val = colName.replace("@", "");
+                        params = Uteis.append(params, val);
+                    }
                 }else {
                     String val = RowListValues.get(i).toString();
                     params = Uteis.append(params, val);

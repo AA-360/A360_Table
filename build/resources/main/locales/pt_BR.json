@@ -30,7 +30,7 @@
     "FilterRegister.table.label": "Tabela:",
     "FilterRegister.table.description": "",
     "FilterRegister.cols.label": "Colunas de Entrada:",
-    "FilterRegister.cols.description": "Colunas a serem inseridas no tratamento Ex:'COl1|COL2'",
+    "FilterRegister.cols.description": "Colunas a serem inseridas no tratamento Ex:'COl1|COL2|*'",
     "FilterRegister.code.label": "javaScript Code",
     "FilterRegister.code.description": "sua função deve se chamar 'filter' obrigatoriamente e retornar True|False",
 

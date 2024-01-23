@@ -30,7 +30,7 @@
 	"FilterRegister.table.label": "Table:",
 	"FilterRegister.table.description": "",
 	"FilterRegister.cols.label": "Input Columns:",
-	"FilterRegister.cols.description": "Columns used in Js code Ex:'COl1|COL2'",
+	"FilterRegister.cols.description": "Columns used in Js code Ex:'COl1|COL2|*'",
 	"FilterRegister.code.label": "javaScript Code",
 	"FilterRegister.code.description": "your function migth be called 'filter' and return True|False",
 
