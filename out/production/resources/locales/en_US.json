@@ -30,7 +30,7 @@
 	"FilterRegister.table.label": "Table:",
 	"FilterRegister.table.description": "",
 	"FilterRegister.cols.label": "Input Columns:",
-	"FilterRegister.cols.description": "Columns used in Js code Ex:'COl1|COL2'",
+	"FilterRegister.cols.description": "Columns used in Js code Ex:'COl1|COL2|*'",
 	"FilterRegister.code.label": "javaScript Code",
 	"FilterRegister.code.description": "your function migth be called 'filter' and return True|False",
 
@@ -205,7 +205,25 @@
 	"ClearTable.description": "Deletes all rows from a table",
 	"ClearTable.node_label": "Delete all rows from {{Tabela}}",
 	"ClearTable.table.label": "Table:",
-	"ClearTable.table.description": ""
+	"ClearTable.table.description": "",
 
+
+	"RowCount.description": "Condition for number of rows in a table",
+	"RowCount.node_label": "Row count {{Tabela}} {{condition}} {{number}}",
+	"RowCount.table.label": "Table:",
+	"RowCount.table.description": "",
+	"RowCount.condition.label": "Condition:",
+	"RowCount.condition.description": "",
+	"RowCount.numb.label": "Number:",
+	"RowCountRowCount.numb.description": "",
+
+	"ColCount.description": "Condition for number of columns in a table",
+	"ColCount.node_label": "Column count {{Tabela}} {{condition}} {{number}}",
+	"ColCount.table.label": "Table:",
+	"ColCount.table.description": "",
+	"ColCount.condition.label": "Condition:",
+	"ColCount.condition.description": "",
+	"ColCount.numb.label": "Number:",
+	"ColCount.numb.description": ""
 }
 

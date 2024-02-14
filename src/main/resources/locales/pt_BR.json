@@ -206,7 +206,25 @@
     "ClearTable.description": "Deleta todas as linhas de uma tabela",
     "ClearTable.node_label": "Deleta todas as linhas de {{Tabela}}",
     "ClearTable.table.label": "Tabela:",
-    "ClearTable.table.description": ""
+    "ClearTable.table.description": "",
+
+    "RowCount.description": "Condição para o número de linhas em uma tabela",
+    "RowCount.node_label": "Número de Linhas em {{Tabela}} {{condition}} {{number}}",
+    "RowCount.table.label": "Tabela:",
+    "RowCount.table.description": "",
+    "RowCount.condition.label": "Condição:",
+    "RowCount.condition.description": "",
+    "RowCount.numb.label": "Número:",
+    "RowCountRowCount.numb.description": "",
+
+    "ColCount.description": "Condição para o número de colunas em uma tabela",
+    "ColCount.node_label": "Numero de Colunas em {{Tabela}} {{condition}} {{number}}",
+    "ColCount.table.label": "Tabela:",
+    "ColCount.table.description": "",
+    "ColCount.condition.label": "Condição:",
+    "ColCount.condition.description": "",
+    "ColCount.numb.label": "Número:",
+    "ColCount.numb.description": ""
 
 
 }

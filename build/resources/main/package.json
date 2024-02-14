@@ -4,8 +4,8 @@
     "description": "",
     "group": "com.automationanywhere",
     "artifactName": "Table_Uts",
-    "packageVersion": "5.2-20240123-105423",
-    "codeVersion": "5.2-20240123-105423",
+    "packageVersion": "5.3-20240214-113443",
+    "codeVersion": "5.3-20240214-113443",
     "author": "",
     "commands": [
         {
@@ -1053,6 +1053,74 @@
     ],
     "conditionals": [
         {
+            "name": "ColCount",
+            "label": "ColCount",
+            "description": "[[ColCount.description]]",
+            "nodeLabel": "[[ColCount.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.conditionals.ColCountCondition",
+            "attributes": [
+                {
+                    "name": "Tabela",
+                    "label": "[[ColCount.table.label]]",
+                    "description": "[[ColCount.table.description]]",
+                    "type": "TABLE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "condition",
+                    "label": "[[ColCount.condition.label]]",
+                    "description": "[[ColCount.condition.description]]",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "=",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": ">",
+                            "value": ">"
+                        },
+                        {
+                            "label": "<",
+                            "value": "<"
+                        },
+                        {
+                            "label": "<=",
+                            "value": "<="
+                        },
+                        {
+                            "label": ">=",
+                            "value": ">="
+                        },
+                        {
+                            "label": "=",
+                            "value": "="
+                        }
+                    ]
+                },
+                {
+                    "name": "number",
+                    "label": "[[ColCount.numb.label]]",
+                    "description": "[[ColCount.numb.description]]",
+                    "type": "NUMBER",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "HasAllHeaders",
             "label": "HasAllHeaders",
             "description": "[[HasAllHeaders.description]]",
@@ -1151,6 +1219,74 @@
                         "boolean": false,
                         "type": "BOOLEAN"
                     },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "RowCount",
+            "label": "RowCount",
+            "description": "[[RowCount.description]]",
+            "nodeLabel": "[[RowCount.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.conditionals.RowCountCondition",
+            "attributes": [
+                {
+                    "name": "Tabela",
+                    "label": "[[RowCount.table.label]]",
+                    "description": "[[RowCount.table.description]]",
+                    "type": "TABLE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "condition",
+                    "label": "[[RowCount.condition.label]]",
+                    "description": "[[RowCount.condition.description]]",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "=",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": ">",
+                            "value": ">"
+                        },
+                        {
+                            "label": "<",
+                            "value": "<"
+                        },
+                        {
+                            "label": "<=",
+                            "value": "<="
+                        },
+                        {
+                            "label": ">=",
+                            "value": ">="
+                        },
+                        {
+                            "label": "=",
+                            "value": "="
+                        }
+                    ]
+                },
+                {
+                    "name": "number",
+                    "label": "[[RowCount.numb.label]]",
+                    "description": "[[RowCount.numb.description]]",
+                    "type": "NUMBER",
                     "rules": [
                         {
                             "name": "NOT_EMPTY"

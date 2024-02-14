@@ -9,7 +9,9 @@ import com.automationanywhere.botcommand.exception.BotCommandException;
 import com.automationanywhere.botcommand.samples.commands.basic.Calculate;
 import com.automationanywhere.botcommand.samples.commands.basic.ColumnToList;
 import com.automationanywhere.botcommand.samples.commands.basic.ListToHeaders;
+import com.automationanywhere.botcommand.samples.commands.conditionals.ColCount;
 import com.automationanywhere.botcommand.samples.commands.conditionals.HasHeader;
+import com.automationanywhere.botcommand.samples.commands.conditionals.RowCount;
 import org.testng.annotations.Test;
 
 import java.io.BufferedReader;
@@ -22,7 +24,19 @@ import java.util.List;
 
 public class CalculateTest {
 
-    //@Test
+    @Test
+    public void test(){
+        Table tb = this.tabela();
+        RowCount a = new RowCount();
+        ColCount b = new ColCount();
+
+        boolean v = b.validate(tb,"=",3.0);
+
+        System.out.println(v);
+
+    }
+
+
     public void listToHeaders(){
         ListToHeaders a = new ListToHeaders();
         Table tb = this.tabela();
