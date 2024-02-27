@@ -224,7 +224,13 @@
     "ColCount.condition.label": "Condição:",
     "ColCount.condition.description": "",
     "ColCount.numb.label": "Número:",
-    "ColCount.numb.description": ""
+    "ColCount.numb.description": "",
+
+    "JsonListToTable.description": "Converte uma lista de json List<Json> para uma Tabela \n exemplo:\n [ \n{\"key1\":\"val1\"},\n{\"key2\":\"val2\"}, \n]",
+    "JsonListToTable.node_label": "Json {{json}} para tabela {{returnTo}}",
+    "JsonListToTable.return_description": "",
+    "JsonListToTable.json.label": "Json:",
+    "JsonListToTable.json.description": "Lista de Json [{},{},{}]"
 
 
 }

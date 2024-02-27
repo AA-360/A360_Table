@@ -24,6 +24,11 @@ public class FindInListSchema implements Cloneable{
                 this.schemas = this.cast(objectList);
             }
         }
+        if(this.schemas == null){
+            List<Schema> listSchema = new ArrayList();
+            this.schemas = listSchema;
+        }
+
     }
 
 
@@ -38,6 +43,7 @@ public class FindInListSchema implements Cloneable{
 
     }
     public Boolean exists(String value) {
+        if(this.schemas == null) return false;
         for(Schema lsc : this.schemas){
             if(lsc.getName().equals(value)){
                 return true;

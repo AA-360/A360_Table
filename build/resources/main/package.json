@@ -4,8 +4,8 @@
     "description": "",
     "group": "com.automationanywhere",
     "artifactName": "Table_Uts",
-    "packageVersion": "5.3-20240214-113443",
-    "codeVersion": "5.3-20240214-113443",
+    "packageVersion": "5.5-20240227-173117",
+    "codeVersion": "5.5-20240227-173117",
     "author": "",
     "commands": [
         {
@@ -237,6 +237,32 @@
                         {
                             "name": "CODE_TYPE",
                             "value": "text/javascript"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "JsonListToTable",
+            "label": "JsonListToTable",
+            "description": "[[JsonListToTable.description]]",
+            "nodeLabel": "[[JsonListToTable.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.JsonListToTableCommand",
+            "icon": "pkg.svg",
+            "returnType": "TABLE",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "",
+            "returnRequired": true,
+            "returnDescription": "[[JsonListToTable.return_description]]",
+            "attributes": [
+                {
+                    "name": "json",
+                    "label": "[[JsonListToTable.json.label]]",
+                    "description": "[[JsonListToTable.json.description]]",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
                         }
                     ]
                 }
