@@ -6,6 +6,7 @@ import com.automationanywhere.botcommand.data.Value;
 import com.automationanywhere.botcommand.exception.BotCommandException;
 import com.automationanywhere.commandsdk.i18n.Messages;
 import com.automationanywhere.commandsdk.i18n.MessagesFactory;
+import java.lang.Boolean;
 import java.lang.ClassCastException;
 import java.lang.Deprecated;
 import java.lang.Object;
@@ -34,18 +35,28 @@ public final class JsonListToTableCommand implements BotCommand {
     logger.traceEntry(() -> parameters != null ? parameters.entrySet().stream().filter(en -> !Arrays.asList( new String[] {}).contains(en.getKey()) && en.getValue() != null).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue)).toString() : null, ()-> sessionMap != null ?sessionMap.toString() : null);
     JsonListToTable command = new JsonListToTable();
     HashMap<String, Object> convertedParameters = new HashMap<String, Object>();
-    if(parameters.containsKey("json") && parameters.get("json") != null && parameters.get("json").get() != null) {
-      convertedParameters.put("json", parameters.get("json").get());
-      if(convertedParameters.get("json") !=null && !(convertedParameters.get("json") instanceof String)) {
-        throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","json", "String", parameters.get("json").get().getClass().getSimpleName()));
+    if(parameters.containsKey("file") && parameters.get("file") != null && parameters.get("file").get() != null) {
+      convertedParameters.put("file", parameters.get("file").get());
+      if(convertedParameters.get("file") !=null && !(convertedParameters.get("file") instanceof String)) {
+        throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","file", "String", parameters.get("file").get().getClass().getSimpleName()));
       }
     }
-    if(convertedParameters.get("json") == null) {
-      throw new BotCommandException(MESSAGES_GENERIC.getString("generic.validation.notEmpty","json"));
+    if(convertedParameters.get("file") == null) {
+      throw new BotCommandException(MESSAGES_GENERIC.getString("generic.validation.notEmpty","file"));
+    }
+
+    if(parameters.containsKey("explode") && parameters.get("explode") != null && parameters.get("explode").get() != null) {
+      convertedParameters.put("explode", parameters.get("explode").get());
+      if(convertedParameters.get("explode") !=null && !(convertedParameters.get("explode") instanceof Boolean)) {
+        throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","explode", "Boolean", parameters.get("explode").get().getClass().getSimpleName()));
+      }
+    }
+    if(convertedParameters.get("explode") == null) {
+      throw new BotCommandException(MESSAGES_GENERIC.getString("generic.validation.notEmpty","explode"));
     }
 
     try {
-      Optional<Value> result =  Optional.ofNullable(command.action((String)convertedParameters.get("json")));
+      Optional<Value> result =  Optional.ofNullable(command.action((String)convertedParameters.get("file"),(Boolean)convertedParameters.get("explode")));
       return logger.traceExit(result);
     }
     catch (ClassCastException e) {

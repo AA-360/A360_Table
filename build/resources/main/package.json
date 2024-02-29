@@ -4,8 +4,8 @@
     "description": "",
     "group": "com.automationanywhere",
     "artifactName": "Table_Uts",
-    "packageVersion": "5.5-20240227-173117",
-    "codeVersion": "5.5-20240227-173117",
+    "packageVersion": "5.7-20240228-173242",
+    "codeVersion": "5.7-20240228-173242",
     "author": "",
     "commands": [
         {
@@ -256,10 +256,25 @@
             "returnDescription": "[[JsonListToTable.return_description]]",
             "attributes": [
                 {
-                    "name": "json",
+                    "name": "file",
                     "label": "[[JsonListToTable.json.label]]",
                     "description": "[[JsonListToTable.json.description]]",
-                    "type": "TEXT",
+                    "type": "FILE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "explode",
+                    "label": "[[JsonListToTable.explode.label]]",
+                    "description": "[[JsonListToTable.explode.description]]",
+                    "type": "CHECKBOX",
+                    "defaultValue": {
+                        "boolean": false,
+                        "type": "BOOLEAN"
+                    },
                     "rules": [
                         {
                             "name": "NOT_EMPTY"

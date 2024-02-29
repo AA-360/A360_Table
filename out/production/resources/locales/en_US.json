@@ -230,6 +230,8 @@
 	"JsonListToTable.node_label": "Json {{json}} to Table {{returnTo}}",
 	"JsonListToTable.return_description": "",
 	"JsonListToTable.json.label": "Json:",
-	"JsonListToTable.json.description": "Json List String [{},{},{}]"
+	"JsonListToTable.json.description": "Json List String [{},{},{}]",
+	"JsonListToTable.explode.label": "Explode",
+	"JsonListToTable.explode.description": ""
 }
 
