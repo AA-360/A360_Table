@@ -243,6 +243,14 @@
 	"RowToJson.record.label": "Record:",
 	"RowToJson.record.description": "",
 	"RowToJson.table.label": "Table:",
-	"RowToJson.table.description": ""
+	"RowToJson.table.description": "",
+
+	"ListToHeaders.description": "Add columns to a table from a list",
+	"ListToHeaders.node_label": "Add columns form {{lista}} to {{Tabela}}",
+	"ListToHeaders.table.label": "Table:",
+	"ListToHeaders.table.description": "",
+	"ListToHeaders.list.label": "List:",
+	"ListToHeaders.list.description": "New columns list",
+	"ListToHeaders.return_description": "Returns the new table"
 }
 

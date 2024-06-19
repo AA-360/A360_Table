@@ -243,5 +243,24 @@
     "RowToJson.record.label": "Record:",
     "RowToJson.record.description": "",
     "RowToJson.table.label": "Tabela:",
-    "RowToJson.table.description": ""
+    "RowToJson.table.description": "",
+
+
+    "ListToHeaders.description": "Adciona novas colunas a tabela",
+    "ListToHeaders.node_label": "Adiciona as colunas de {{lista}} para {{Tabela}}",
+    "ListToHeaders.table.label": "Tabela:",
+    "ListToHeaders.table.description": "",
+    "ListToHeaders.list.label": "Lista:",
+    "ListToHeaders.list.description": "Lista de novas colunas",
+    "ListToHeaders.return_description": "Retorna a nova tabela",
+
+    "ClearColums.description": "Limpa uma ou mais colunas de uma tabela",
+    "ClearColums.node_label": "Limpar colunas de {{Tabela}}",
+    "ClearColums.return_description": "Retorna a nova tabela",
+    "ClearColums.table.label": "Tabela:",
+    "ClearColums.table.description": "",
+    "ClearColums.list.label": "Lista:",
+    "ClearColums.list.description": "lista de nomes de colunas a limpar",
+    "ClearColums.single.label": "Nome da Coluna:",
+    "ClearColums.single.description": "nome da coluna"
 }
