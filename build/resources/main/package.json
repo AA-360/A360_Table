@@ -4,8 +4,8 @@
     "description": "",
     "group": "com.automationanywhere",
     "artifactName": "Table_Uts",
-    "packageVersion": "5.8-20240503-181625",
-    "codeVersion": "5.8-20240503-181625",
+    "packageVersion": "6.0-20240620-220229",
+    "codeVersion": "6.0-20240620-220229",
     "author": "",
     "commands": [
         {
@@ -55,6 +55,83 @@
                         {
                             "name": "CODE_TYPE",
                             "value": "text/javascript"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ClearColums",
+            "label": "ClearColums",
+            "description": "[[ClearColums.description]]",
+            "nodeLabel": "[[ClearColums.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.ClearColumsCommand",
+            "icon": "pkg.svg",
+            "returnType": "TABLE",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "",
+            "returnRequired": true,
+            "returnDescription": "[[ClearColums.return_description]]",
+            "attributes": [
+                {
+                    "name": "Tabela",
+                    "label": "[[ClearColums.table.label]]",
+                    "description": "[[ClearColums.table.description]]",
+                    "type": "TABLE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "from",
+                    "label": "[[ClearColums.from.label]]",
+                    "description": "[[ClearColums.from.description]]",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "single",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "List",
+                            "value": "list",
+                            "attributes": [
+                                {
+                                    "name": "list",
+                                    "label": "[[ClearColums.list.label]]",
+                                    "description": "[[ClearColums.list.description]]",
+                                    "type": "LIST",
+                                    "rules": [
+                                        {
+                                            "name": "NOT_EMPTY"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "label": "Single",
+                            "value": "single",
+                            "attributes": [
+                                {
+                                    "name": "single",
+                                    "label": "[[ClearColums.single.label]]",
+                                    "description": "[[ClearColums.single.description]]",
+                                    "type": "TEXT",
+                                    "rules": [
+                                        {
+                                            "name": "NOT_EMPTY"
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
@@ -321,6 +398,43 @@
             ]
         },
         {
+            "name": "NewColumns",
+            "label": "NewColumns",
+            "description": "[[NewColumns.description]]",
+            "nodeLabel": "[[NewColumns.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.NewColumnsCommand",
+            "icon": "pkg.svg",
+            "returnType": "TABLE",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "",
+            "returnRequired": true,
+            "returnDescription": "[[NewColumns.return_description]]",
+            "attributes": [
+                {
+                    "name": "Tabela",
+                    "label": "[[NewColumns.table.label]]",
+                    "description": "[[NewColumns.table.description]]",
+                    "type": "TABLE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "lista",
+                    "label": "[[NewColumns.list.label]]",
+                    "description": "[[NewColumns.list.description]]",
+                    "type": "LIST",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "name": "NewEmptyRow",
             "label": "NewEmptyRow",
             "description": "[[NewEmptyRow.description]]",
@@ -360,6 +474,90 @@
                                     "name": "NOT_EMPTY"
                                 }
                             ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PivotTable",
+            "label": "PivotTable",
+            "description": "[[PivotTable.description]]",
+            "nodeLabel": "[[PivotTable.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.PivotTableCommand",
+            "icon": "pkg.svg",
+            "returnType": "TABLE",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "",
+            "returnRequired": true,
+            "returnDescription": "[[PivotTable.return_description]]",
+            "attributes": [
+                {
+                    "name": "Tabela",
+                    "label": "[[PivotTable.table.label]]",
+                    "description": "[[PivotTable.table.description]]",
+                    "type": "TABLE",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "pivot_columns",
+                    "label": "[[PivotTable.list.label]]",
+                    "description": "[[PivotTable.list.description]]",
+                    "type": "LIST",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "agg_column",
+                    "label": "[[PivotTable.agg_column.label]]",
+                    "description": "[[PivotTable.agg_column.description]]",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "calc_mode",
+                    "label": "[[PivotTable.calc_mode.label]]",
+                    "description": "[[PivotTable.calc_mode.description]]",
+                    "type": "SELECT",
+                    "defaultValue": {
+                        "string": "count",
+                        "type": "STRING"
+                    },
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "label": "Count",
+                            "value": "count"
+                        },
+                        {
+                            "label": "Sum",
+                            "value": "sum"
+                        }
+                    ]
+                },
+                {
+                    "name": "calc_column",
+                    "label": "[[PivotTable.calc_column.label]]",
+                    "description": "[[PivotTable.calc_column.description]]",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
                         }
                     ]
                 }

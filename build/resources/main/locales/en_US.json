@@ -243,6 +243,40 @@
 	"RowToJson.record.label": "Record:",
 	"RowToJson.record.description": "",
 	"RowToJson.table.label": "Table:",
-	"RowToJson.table.description": ""
+	"RowToJson.table.description": "",
+
+	"NewColumns.description": "Add columns to a table from a list",
+	"NewColumns.node_label": "Add columns form {{lista}} to {{Tabela}}",
+	"NewColumns.table.label": "Table:",
+	"NewColumns.table.description": "",
+	"NewColumns.list.label": "List:",
+	"NewColumns.list.description": "New columns list",
+	"NewColumns.return_description": "Returns the new table",
+
+	"ClearColums.description": "Clears one or more columns from a table",
+	"ClearColums.node_label": "Clear columns from {{Tabela}}",
+	"ClearColums.return_description": "Returns the new table",
+	"ClearColums.table.label": "Table:",
+	"ClearColums.table.description": "",
+	"ClearColums.list.label": "List:",
+	"ClearColums.from.label": "Type:",
+	"ClearColums.from.description": "",
+	"ClearColums.list.description": "list of column names to clear",
+	"ClearColums.single.label": "Column Name:",
+	"ClearColums.single.description": "col name",
+
+	"PivotTable.description": "Creates a pivot table",
+	"PivotTable.node_label": "Pivot table from {{Tabela}} to {{returnTo}}",
+	"PivotTable.return_description": "Returns the new table",
+	"PivotTable.table.label": "Table:",
+	"PivotTable.table.description": "",
+	"PivotTable.list.label": "Pivot Columns:",
+	"PivotTable.list.description": "",
+	"PivotTable.agg_column.label": "AggColumn:",
+	"PivotTable.agg_column.description": "Columns to transpose",
+	"PivotTable.calc_mode.label": "Mode:",
+	"PivotTable.calc_mode.description": "",
+	"PivotTable.calc_column.label": "CalcColumn:",
+	"PivotTable.calc_column.description": "Column used to calculate aggregated values"
 }
 

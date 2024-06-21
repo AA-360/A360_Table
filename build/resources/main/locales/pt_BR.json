@@ -243,5 +243,40 @@
     "RowToJson.record.label": "Record:",
     "RowToJson.record.description": "",
     "RowToJson.table.label": "Tabela:",
-    "RowToJson.table.description": ""
+    "RowToJson.table.description": "",
+
+
+    "NewColumns.description": "Adciona novas colunas a tabela",
+    "NewColumns.node_label": "Adiciona as colunas de {{lista}} para {{Tabela}}",
+    "NewColumns.table.label": "Tabela:",
+    "NewColumns.table.description": "",
+    "NewColumns.list.label": "Lista:",
+    "NewColumns.list.description": "Lista de novas colunas",
+    "NewColumns.return_description": "Retorna a nova tabela",
+
+    "ClearColums.description": "Limpa uma ou mais colunas de uma tabela",
+    "ClearColums.node_label": "Limpar colunas de {{Tabela}}",
+    "ClearColums.return_description": "Retorna a nova tabela",
+    "ClearColums.table.label": "Tabela:",
+    "ClearColums.table.description": "",
+    "ClearColums.from.label": "Tipo:",
+    "ClearColums.from.description": "",
+    "ClearColums.list.label": "Lista:",
+    "ClearColums.list.description": "lista de nomes de colunas a limpar",
+    "ClearColums.single.label": "Nome da Coluna:",
+    "ClearColums.single.description": "nome da coluna",
+
+    "PivotTable.description": "Cria uma tabela transposta",
+    "PivotTable.node_label": "Transpoe a tabela {{Tabela}} para {{returnTo}}",
+    "PivotTable.return_description": "Nova tabela",
+    "PivotTable.table.label": "Tabela:",
+    "PivotTable.table.description": "",
+    "PivotTable.list.label": "Colunas de Agrupamento:",
+    "PivotTable.list.description": "Colunas de agrupamento",
+    "PivotTable.agg_column.label": "Colunas para Transpor:",
+    "PivotTable.agg_column.description": "columns to transpose",
+    "PivotTable.calc_mode.label": "Modo:",
+    "PivotTable.calc_mode.description": "",
+    "PivotTable.calc_column.label": "Colunas de Calculo:",
+    "PivotTable.calc_column.description": "Coluna usada para calcular os valores agregados"
 }

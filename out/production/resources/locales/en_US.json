@@ -245,12 +245,24 @@
 	"RowToJson.table.label": "Table:",
 	"RowToJson.table.description": "",
 
-	"ListToHeaders.description": "Add columns to a table from a list",
-	"ListToHeaders.node_label": "Add columns form {{lista}} to {{Tabela}}",
-	"ListToHeaders.table.label": "Table:",
-	"ListToHeaders.table.description": "",
-	"ListToHeaders.list.label": "List:",
-	"ListToHeaders.list.description": "New columns list",
-	"ListToHeaders.return_description": "Returns the new table"
+	"NewColumns.description": "Add columns to a table from a list",
+	"NewColumns.node_label": "Add columns form {{lista}} to {{Tabela}}",
+	"NewColumns.table.label": "Table:",
+	"NewColumns.table.description": "",
+	"NewColumns.list.label": "List:",
+	"NewColumns.list.description": "New columns list",
+	"NewColumns.return_description": "Returns the new table",
+
+	"ClearColums.description": "Clears one or more columns from a table",
+	"ClearColums.node_label": "Clear columns from {{Tabela}}",
+	"ClearColums.return_description": "Returns the new table",
+	"ClearColums.table.label": "Table:",
+	"ClearColums.table.description": "",
+	"ClearColums.list.label": "List:",
+	"ClearColums.from.label": "Type:",
+	"ClearColums.from.description": "",
+	"ClearColums.list.description": "list of column names to clear",
+	"ClearColums.single.label": "Column Name:",
+	"ClearColums.single.description": "col name"
 }
 

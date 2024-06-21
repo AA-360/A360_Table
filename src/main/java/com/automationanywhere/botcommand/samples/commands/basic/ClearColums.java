@@ -68,7 +68,7 @@ public class ClearColums {
             @NotEmpty
             List<Value> list,
 
-            @Idx(index = "2.1.2", type = TEXT)
+            @Idx(index = "2.2.1", type = TEXT)
             @Pkg(label = "[[ClearColums.single.label]]",description = "[[ClearColums.single.description]]")
             @NotEmpty
             String single

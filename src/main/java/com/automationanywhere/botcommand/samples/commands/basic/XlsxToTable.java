@@ -111,7 +111,7 @@ public class XlsxToTable {
 
             Integer idxs =0;
             for(org.apache.poi.ss.usermodel.Row rw: ROWS){
-                System.out.println(idxs++);
+//                System.out.println(idxs++);
                     List<Cell> listCol = wbH.getColumns(rw);
                     //System.out.println(listCol);
                     List<Value> rwValue = new ArrayList<>();
