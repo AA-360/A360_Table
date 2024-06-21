@@ -273,10 +273,10 @@
     "PivotTable.table.description": "",
     "PivotTable.list.label": "Colunas de Agrupamento:",
     "PivotTable.list.description": "Colunas de agrupamento",
-    "PivotTable.agg_column.label": "Colunas para Transpor:",
+    "PivotTable.agg_column.label": "Coluna para Transpor:",
     "PivotTable.agg_column.description": "columns to transpose",
     "PivotTable.calc_mode.label": "Modo:",
     "PivotTable.calc_mode.description": "",
-    "PivotTable.calc_column.label": "Colunas de Calculo:",
+    "PivotTable.calc_column.label": "Coluna de Calculo:",
     "PivotTable.calc_column.description": "Coluna usada para calcular os valores agregados"
 }

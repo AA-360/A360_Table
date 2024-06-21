@@ -273,7 +273,7 @@
 	"PivotTable.list.label": "Pivot Columns:",
 	"PivotTable.list.description": "",
 	"PivotTable.agg_column.label": "AggColumn:",
-	"PivotTable.agg_column.description": "Columns to transpose",
+	"PivotTable.agg_column.description": "Column to transpose",
 	"PivotTable.calc_mode.label": "Mode:",
 	"PivotTable.calc_mode.description": "",
 	"PivotTable.calc_column.label": "CalcColumn:",
