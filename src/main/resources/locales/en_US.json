@@ -277,6 +277,12 @@
 	"PivotTable.calc_mode.label": "Mode:",
 	"PivotTable.calc_mode.description": "",
 	"PivotTable.calc_column.label": "CalcColumn:",
-	"PivotTable.calc_column.description": "Column used to calculate aggregated values"
+	"PivotTable.calc_column.description": "Column used to calculate aggregated values",
+
+	"ReverseTable.description": "Reverses a table",
+	"ReverseTable.node_label": "Reverse {{Tabela}} to {{returnTo}}",
+	"ReverseTable.return_description": "Returns the new table",
+	"ReverseTable.table.label": "Table:",
+	"ReverseTable.table.description": ""
 }
 

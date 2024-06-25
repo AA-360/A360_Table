@@ -264,5 +264,19 @@
     "ClearColums.list.label": "Lista:",
     "ClearColums.list.description": "lista de nomes de colunas a limpar",
     "ClearColums.single.label": "Nome da Coluna:",
-    "ClearColums.single.description": "nome da coluna"
+    "ClearColums.single.description": "nome da coluna",
+
+    "PivotTable.description": "Cria uma tabela transposta",
+    "PivotTable.node_label": "Transpoe a tabela {{Tabela}} para {{returnTo}}",
+    "PivotTable.return_description": "Nova tabela",
+    "PivotTable.table.label": "Tabela:",
+    "PivotTable.table.description": "",
+    "PivotTable.list.label": "Colunas de Agrupamento:",
+    "PivotTable.list.description": "Colunas de agrupamento",
+    "PivotTable.agg_column.label": "Coluna para Transpor:",
+    "PivotTable.agg_column.description": "columns to transpose",
+    "PivotTable.calc_mode.label": "Modo:",
+    "PivotTable.calc_mode.description": "",
+    "PivotTable.calc_column.label": "Coluna de Calculo:",
+    "PivotTable.calc_column.description": "Coluna usada para calcular os valores agregados"
 }
