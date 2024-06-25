@@ -278,5 +278,11 @@
     "PivotTable.calc_mode.label": "Modo:",
     "PivotTable.calc_mode.description": "",
     "PivotTable.calc_column.label": "Coluna de Calculo:",
-    "PivotTable.calc_column.description": "Coluna usada para calcular os valores agregados"
+    "PivotTable.calc_column.description": "Coluna usada para calcular os valores agregados",
+
+    "ReverseTable.description": "Inverte as linhas de uma tabela",
+    "ReverseTable.node_label": "Inverter {{Tabela}} para {{returnTo}}",
+    "ReverseTable.return_description": "Nova tabela invertida",
+    "ReverseTable.table.label": "Tabela:",
+    "ReverseTable.table.description": ""
 }

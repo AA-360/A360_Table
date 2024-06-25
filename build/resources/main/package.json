@@ -4,8 +4,8 @@
     "description": "",
     "group": "com.automationanywhere",
     "artifactName": "Table_Uts",
-    "packageVersion": "6.0-20240621-123750",
-    "codeVersion": "6.0-20240621-123750",
+    "packageVersion": "6.1-20240625-175837",
+    "codeVersion": "6.1-20240625-175837",
     "author": "",
     "commands": [
         {
@@ -592,6 +592,32 @@
                     "label": "[[ReorderColumns.cols.label]]",
                     "description": "[[ReorderColumns.cols.description]]",
                     "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ReverseTable",
+            "label": "ReverseTable",
+            "description": "[[ReverseTable.description]]",
+            "nodeLabel": "[[ReverseTable.node_label]]",
+            "mainClass": "com.automationanywhere.botcommand.samples.commands.basic.ReverseTableCommand",
+            "icon": "pkg.svg",
+            "returnType": "TABLE",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "",
+            "returnRequired": true,
+            "returnDescription": "[[ReverseTable.return_description]]",
+            "attributes": [
+                {
+                    "name": "Tabela",
+                    "label": "[[ReverseTable.table.label]]",
+                    "description": "[[ClearTable.table.description]]",
+                    "type": "TABLE",
                     "rules": [
                         {
                             "name": "NOT_EMPTY"
